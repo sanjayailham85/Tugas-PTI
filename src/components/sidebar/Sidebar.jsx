@@ -22,9 +22,9 @@ const Sidebar = () => {
         <SidebarContent className="sidebarMenu">
           <Menu>
             {SidebarData.map((item, index) => (
-              <SubMenu title={item.title}>
+              <SubMenu title={item.title} icon={item.logo}>
                 {item.subNav.map((subItem, subItemIndex) => (
-                  <MenuItem>
+                  <MenuItem icon={subItem.subLogo}>
                     {subItem.title}
                     <Link to={subItem.path} />
                   </MenuItem>

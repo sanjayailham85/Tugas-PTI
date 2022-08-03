@@ -1,15 +1,15 @@
 .navbar {
-    height: 50px;
+    height: 65px;
     border-bottom: 1px solid rgb(235, 234, 234);
     display: flex;
     align-items: center;
     font-size: 14px;
     color: #555;
+    flex: 6;
 
     .wrapper {
         display: flex;
         padding: 20px;
         align-items: center;
-        width: 100%;
     }
 }

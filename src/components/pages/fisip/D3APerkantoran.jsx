@@ -4,7 +4,7 @@ import Content from '../../content/Content';
 const D3APerkantoran = () => {
   return (
     <div>
-      <Content />
+      <Content title="D3 Administrasi Perkantoran" link="0227SsnexCE" />
     </div>
   );
 };

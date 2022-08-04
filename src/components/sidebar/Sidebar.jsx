@@ -16,7 +16,9 @@ const Sidebar = () => {
     <div className="sidebar">
       <ProSidebar className="side">
         <SidebarHeader className="top">
-          <div className="logo">ini logo</div>
+          <Link to="/">
+            <div className="logo">Podcast Unila</div>
+          </Link>
         </SidebarHeader>
 
         <SidebarContent className="sidebarMenu">

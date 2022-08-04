@@ -1,4 +1,4 @@
-.content {
+.home {
     display: flex;
     justify-content: space-between;
     flex: 1;
@@ -8,17 +8,24 @@
     border-radius: 10px;
     height: 600px;
     background-color: white;
-    // background-image: linear-gradient(315deg, #06bcfb 0%, #4884ee 74%) ;
 
-    .content_ {
-        padding: 10px;
-        font-size: 10px;
-        color: gray;
-        
+  
 
-        .iframe {
-            padding-top: 8px;
+        .homeImage {
+            
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: gray;
+            
+    
+            .img {
+                
+
+                width: 20rem;
+            }
         }
+    
 
-    }
 }

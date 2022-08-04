@@ -76,7 +76,10 @@ import IlmuAdmNegara from './components/pages/fisip/IlmuAdmNegara';
 import IlmuKomunikasi from './components/pages/fisip/IlmuKomunikasi';
 import IlmuPemerintahan from './components/pages/fisip/IlmuPemerintahan';
 import Sosiologi from './components/pages/fisip/Sosiologi';
-import Layout from './components/Home/Layout';
+
+import Layout from './components/Layout/Layout';
+import D3Arsitektur from './components/pages/ft/D3Arsitektur';
+import Home from './components/home/Home';
 
 function App() {
   return (
@@ -84,7 +87,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<div>Hallo</div>} />
+            <Route index element={<Home />} />
             <Route path="feb">
               <Route path="akuntansi" element={<Akuntansi />} />
               <Route path="d3akuntansi" element={<D3Akuntansi />} />
@@ -137,6 +140,7 @@ function App() {
 
             <Route path="ft">
               <Route path="arsitektur" element={<Arsitektur />} />
+              <Route path="d3Arsitektur" element={<D3Arsitektur />} />
               <Route path="d3Survei" element={<D3Survei />} />
               <Route path="d3TMesin" element={<D3TMesin />} />
               <Route path="d3TSipil" element={<D3TSipil />} />

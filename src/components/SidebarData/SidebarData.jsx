@@ -259,6 +259,11 @@ export const SidebarData = [
         subLogo: <ArrowRightIcon />,
       },
       {
+        title: 'D3 Arsitektur',
+        path: '/ft/d3Arsitektur',
+        subLogo: <ArrowRightIcon />,
+      },
+      {
         title: 'D3 Survei & Pemetaan',
         path: '/ft/d3Survei',
         subLogo: <ArrowRightIcon />,

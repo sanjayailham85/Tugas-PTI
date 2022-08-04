@@ -4,7 +4,7 @@ import Content from '../../content/Content';
 const D3HMasyarkat = () => {
   return (
     <div>
-      <Content />
+      <Content title="D3 Hubungan Masyarakat" link="TjlJoIycuLI" />
     </div>
   );
 };

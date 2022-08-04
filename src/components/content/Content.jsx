@@ -8,7 +8,6 @@ const Content = ({ title, link }) => {
         <h1>{title}</h1>
         <iframe
           className="iframe"
-          width="1035"
           height="550"
           src={`https://www.youtube.com/embed/${link}`}
           frameBorder="0"

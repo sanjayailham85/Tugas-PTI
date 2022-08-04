@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SidebarData } from '../SidebarData/SidebarData';
 import { Link } from 'react-router-dom';
 import './sidebar.scss';
@@ -10,15 +10,27 @@ import {
   MenuItem,
   SubMenu,
 } from 'react-pro-sidebar';
+import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutlined';
+import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 
 const Sidebar = () => {
+  const [sideCollapse, setSideCollapse] = useState(true);
+
+  const sideIconClick = () => {
+    sideCollapse ? setSideCollapse(false) : setSideCollapse(true);
+  };
+
   return (
     <div className="sidebar">
-      <ProSidebar className="side">
+      <ProSidebar className="side" collapsed={sideCollapse}>
         <SidebarHeader className="top">
-          <Link to="/">
-            <div className="logo">Podcast Unila</div>
-          </Link>
+          <div className="collapse" onClick={sideIconClick}>
+            {sideCollapse ? (
+              <ArrowCircleRightOutlinedIcon />
+            ) : (
+              <ArrowCircleLeftOutlinedIcon />
+            )}
+          </div>
         </SidebarHeader>
 
         <SidebarContent className="sidebarMenu">

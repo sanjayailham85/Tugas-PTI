@@ -9,14 +9,43 @@
     height: 600px;
     background-color: white;
 
+    @media only screen and (max-width: 360px) {
+        height: 40%;
+            
+    }
+
         .homeImage {
-            display: flex;
+            // display: flex;
             align-items: center;
             justify-content: center;
             color: gray;
+            width: 100%;
+
+            @media only screen and (max-width: 360px) {
+                font-size: .8rem;
+                
+            }
+
+            h1 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media only screen and (max-width: 360px) {
+                    font-size: .7rem;
+                    margin-top: 10px;
+                    text-align: center;
+                }
+            }
             
             .img {
+                
                 width: 20rem;
+                @media only screen and (max-width: 360px) {
+                    width: 80%;
+                    margin-left: 23px;
+                    margin-top: 60px;
+                }
+                
             }
         }
 }

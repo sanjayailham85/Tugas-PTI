@@ -2,12 +2,17 @@
     display: flex;
     justify-content: space-between;
     flex: 1;
-    margin: 10px;
+    margin: 10px ;
     padding: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 10px;
     height: 93vh;
     background-color: white;
+
+    @media only screen and (max-width: 360px) {
+        height: 100%;
+            
+    }
 
     .content_ {
         padding: 10px;
@@ -15,9 +20,22 @@
         color: gray;
         width: 100%;
 
+        h1 {
+            @media only screen and (max-width: 360px) {
+                font-size: .9rem;
+                padding-bottom: 14px;
+            }
+        }
+
         iframe {
             padding-top: 8px;
             width: 100%;
+            height: 95%;
+
+            @media only screen and (max-width: 360px) {
+                height: 85%;
+                padding: 0;
+            }
         }
 
     }

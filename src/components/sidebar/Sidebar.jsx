@@ -24,6 +24,9 @@ const Sidebar = () => {
     <div className="sidebar">
       <ProSidebar className="side" collapsed={sideCollapse}>
         <SidebarHeader className="top">
+          <Link to="/">
+            <div className="link-text logo-text">Podcast Unila</div>
+          </Link>
           <div className="collapse" onClick={sideIconClick}>
             {sideCollapse ? (
               <ArrowCircleRightOutlinedIcon />

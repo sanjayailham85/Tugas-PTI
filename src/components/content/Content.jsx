@@ -8,7 +8,6 @@ const Content = ({ title, link }) => {
         <h1>{title}</h1>
         <iframe
           className="iframe"
-          height="550"
           src={`https://www.youtube.com/embed/${link}`}
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -2,11 +2,10 @@ $sidebar-bg-color: #06bcfb linear-gradient(315deg, #06bcfb 0%, #4884ee 74%) !def
 $submenu-bg-color: #06bcfb linear-gradient(315deg, #06bcfb 0%, #4884ee 74%) !default;
 $highlight-color: #555 !default;
 $submenu-bg-color-collapsed: #2faad3 !default;
-$sidebar-collapsed-width: 60px !default;
 
 @import 'react-pro-sidebar/dist/scss/styles.scss';
 
-.sidebar {
+.sidebar {  
     
     .side {
         height: 100vh;
@@ -15,17 +14,13 @@ $sidebar-collapsed-width: 60px !default;
         background-color: #06bcfb;
         background-image: linear-gradient(315deg, #06bcfb 0%, #4884ee 74%);
         
-        @media only screen and (max-width:360px) {
-            height: 100vh;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
+        @media only screen and (max-width:360px) {    
+            height: 58vh;
             width: 100vw;
         }
-
-        @media only screen and (max-width:687px) {
-            height: 100vh;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
+        
+        @media only screen and (max-width:687px) {           
+            height: 58vh;
             width: 100vw;
         }
  
@@ -39,7 +34,7 @@ $sidebar-collapsed-width: 60px !default;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: 33px;
+                font-size: 23px;
                 font-weight: bold;
                 width: 100%;
                 padding: 10px;
@@ -69,20 +64,7 @@ $sidebar-collapsed-width: 60px !default;
                     
                 }
             }
-                // .collapse {
-                //     display: flex;
-                //     align-items: center;
-                //     justify-content: end;
-                //     cursor: pointer;
-                //     padding: 10px;
-                //     color: white;
-                //     width: 100%;
-
-                //     @media only screen and (max-width: 360px) {
-                //         display: none;
-                        
-                //     }
-                // }
+                
             }
             
     
@@ -92,9 +74,8 @@ $sidebar-collapsed-width: 60px !default;
                 .pro-menu {
                     padding-top: 0;
                     .pro-menu-item {
-                        font-size: 23px;
-                        padding-bottom: 30px;
-
+                        font-size: 15px;
+                        
                         @media only screen and (max-width: 360px) {
                             font-size: .9rem;
                             padding-bottom: 0;

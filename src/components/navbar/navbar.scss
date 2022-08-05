@@ -1,15 +1,25 @@
 .navbar {
     height: 65px;
     border-bottom: 1px solid rgb(235, 234, 234);
-    display: flex;
+    display: none;
     align-items: center;
     font-size: 14px;
     color: #555;
     flex: 6;
+    background-color: #06bcfb;
+    background-image: linear-gradient(315deg, #06bcfb 0%, #4884ee 74%);
+
+    @media only screen and (max-width:360px) {
+        display: flex;
+        height: 50px;
+    }
+
+
 
     .wrapper {
         display: flex;
         padding: 20px;
         align-items: center;
+        
     }
 }

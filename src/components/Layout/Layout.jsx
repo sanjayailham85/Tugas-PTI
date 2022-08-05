@@ -6,11 +6,24 @@ import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
   return (
+    // <div className="layout">
+    //   <Sidebar />
+    //   <div className="layoutContainer">
+    //     <Navbar />
+    //     <Outlet />
+    //   </div>
+    // </div>
+
     <div className="layout">
-      <Sidebar />
+      <div className="sideDesktop">
+        <Sidebar />
+      </div>
       <div className="layoutContainer">
         <Navbar />
         <Outlet />
+        <div className="sideMobile">
+          <Sidebar />
+        </div>
       </div>
     </div>
   );

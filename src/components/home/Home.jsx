@@ -9,8 +9,7 @@ const Home = () => {
       <div className="homeImage">
         <img src={HomeImg} alt="home-image" className="img" />
         <h1>
-          Pilih Fakultas serta Program Studi di bagian kiri layar untuk melihat
-          Podcast
+          Pilih Fakultas serta Program Studi pada Menu untuk melihat Podcast
         </h1>
       </div>
     </div>

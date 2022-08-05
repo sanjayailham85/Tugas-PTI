@@ -1,29 +1,61 @@
 $sidebar-bg-color: #06bcfb linear-gradient(315deg, #06bcfb 0%, #4884ee 74%) !default;
 $submenu-bg-color: #06bcfb linear-gradient(315deg, #06bcfb 0%, #4884ee 74%) !default;
 $highlight-color: #555 !default;
-$sidebar-width: 270px !default ;
 $submenu-bg-color-collapsed: #2faad3 !default;
-$sidebar-collapsed-width: 40px !default;
+$sidebar-collapsed-width: 60px !default;
 
 @import 'react-pro-sidebar/dist/scss/styles.scss';
 
 .sidebar {
-
     
     .side {
         height: 100vh;
+        width: 20vw;
         flex: 1;
         background-color: #06bcfb;
         background-image: linear-gradient(315deg, #06bcfb 0%, #4884ee 74%);
+        
+        @media only screen and (max-width:360px) {
+            height: 100vh;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 100vw;
+        }
+
+        @media only screen and (max-width:687px) {
+            height: 100vh;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 100vw;
+        }
  
         .top {
-
+            
             display: flex;
             padding-bottom: 12px;
 
+            a {
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 33px;
+                font-weight: bold;
+                width: 100%;
+                padding: 10px;
+                text-decoration: none;
+            }
+            @media only screen and (max-width:360px) {
+                display: none;
+            }
 
+            @media only screen and (max-width:687px) {
+                display: none;
+            }
+            
             .menuIcon {
                 display: none;
+
                 
 
                 @media only screen and (max-width:360px) {
@@ -37,47 +69,49 @@ $sidebar-collapsed-width: 40px !default;
                     
                 }
             }
-                .collapse {
-                    display: flex;
-                    align-items: center;
-                    justify-content: end;
-                    cursor: pointer;
-                    padding: 10px;
-                    color: white;
-                    width: 100%;
+                // .collapse {
+                //     display: flex;
+                //     align-items: center;
+                //     justify-content: end;
+                //     cursor: pointer;
+                //     padding: 10px;
+                //     color: white;
+                //     width: 100%;
 
-                    @media only screen and (max-width: 360px) {
-                        display: none;
+                //     @media only screen and (max-width: 360px) {
+                //         display: none;
                         
-                    }
-                }
+                //     }
+                // }
             }
             
     
             .sidebarMenu {
                 color: white;
-
+                
                 .pro-menu {
+                    padding-top: 0;
                     .pro-menu-item {
+                        font-size: 23px;
+                        padding-bottom: 30px;
+
+                        @media only screen and (max-width: 360px) {
+                            font-size: .9rem;
+                            padding-bottom: 0;
+                            
+                        }
+                        @media only screen and (max-width: 600px) {
+                            font-size: .9rem;
+                            padding-bottom: 0;
+                            
+                        }
                         .pro-inner-item {
                             .pro-icon-wrapper {
                                 .pro-icon {
-
-                                    margin-right: 35px;
-
-                                    @media only screen and (max-width:360px) {
-                                        margin-right: 35px;
-                                    }
+                                    margin-right: 15px;        
                                 }
                             }
-                        }
-
-                        padding-bottom: 10px;
-                        
-                        @media only screen and (max-width: 360px) {
-                            padding-bottom: 30px;
-                        }
-                        
+                        }                                   
                     }
                 }    
             } 

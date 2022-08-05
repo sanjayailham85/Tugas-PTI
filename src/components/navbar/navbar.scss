@@ -14,12 +14,20 @@
         height: 50px;
     }
 
-
-
-    .wrapper {
+    @media only screen and (max-width:687px) {
+        display: flex;
+        height: 50px;
+    }
+    a {
         display: flex;
         padding: 20px;
         align-items: center;
+        justify-content: center;
+        width: 100%;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
         
     }
 }

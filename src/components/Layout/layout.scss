@@ -2,7 +2,30 @@
     width: 100%;
     display: flex;
 
+    .sideDesktop {
+        @media only screen and (max-width:360px) {
+            display: none;
+        }
+
+        @media only screen and (max-width:687px) {
+            display: none;
+        }
+
+    }
+
     .layoutContainer {
         flex: 6;
+        
+
+        .sideMobile {
+            display: none;
+            @media only screen and (max-width:360px) {
+                display: flex;
+            }
+
+            @media only screen and (max-width:687px) {
+                display: flex;
+            }
+        }
     }
 }

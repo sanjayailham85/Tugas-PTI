@@ -15,29 +15,13 @@ import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOu
 import MenuIcon from '@mui/icons-material/Menu';
 
 const Sidebar = () => {
-  const [sideCollapse, setSideCollapse] = useState(true);
-  const menuRef = useRef(null);
-
-  const sideIconClick = () => {
-    sideCollapse ? setSideCollapse(false) : setSideCollapse(true);
-  };
-
-  const toggleMenu = () => menuRef.current.classList.toggle('side');
-
   return (
     <div className="sidebar">
-      <ProSidebar className="side bottomMenu" collapsed={sideCollapse}>
+      <ProSidebar className="side bottomMenu">
         <SidebarHeader className="top">
-          <div className="menuIcon" onClick={toggleMenu}>
-            <MenuIcon />
-          </div>
-          <div className="collapse" onClick={sideIconClick}>
-            {sideCollapse ? (
-              <ArrowCircleRightOutlinedIcon />
-            ) : (
-              <ArrowCircleLeftOutlinedIcon />
-            )}
-          </div>
+          <Link to="/">
+            <div className="sidebarTitle">Podcast Unila</div>
+          </Link>
         </SidebarHeader>
 
         <SidebarContent className="sidebarMenu">
@@ -45,7 +29,7 @@ const Sidebar = () => {
             {SidebarData.map((item, index) => (
               <SubMenu title={item.title} icon={item.logo}>
                 {item.subNav.map((subItem, subItemIndex) => (
-                  <MenuItem active={true} icon={subItem.subLogo}>
+                  <MenuItem icon={subItem.subLogo}>
                     {subItem.title}
                     <Link to={subItem.path} />
                   </MenuItem>
